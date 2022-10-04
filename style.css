@@ -31,27 +31,30 @@ h2, p {
     font-weight: 400;
 }
 
-.boty {
+.container {
     display: flex;
-    width: 670px;
+    width: 830px;
     height: 440px;
     margin: 150px auto;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;   
+    padding: 0 80px;
 }
 
+/* --- Vlastnosti společné pro oba sloupce --- */
 .obsah {
+    position: relative; 
     padding: 30px;
+    flex-basis: 335px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* ---Levý sloupec--- */
 .levy {
-    position: relative;
     background-image: linear-gradient(#06d7c1, #50cc49);
     border-radius: 10px 0 0 10px;
-    flex-basis: 335px;
-    flex-shrink: 0;
-    color: white;
+    color: white;  
 }
 
 .levy p {
@@ -84,11 +87,8 @@ h2, p {
 
 /* ---Pravý sloupec--- */
 .pravy {
-    position: relative;
     background-color: white;
     border-radius: 0 10px 10px 0;
-    flex-basis: 335px;
-    flex-shrink:  0;
 }
 
 .pravy h1 {
